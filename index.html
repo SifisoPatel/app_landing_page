@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>App Landing Page Website</title>
 
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 
     <link rel="stylesheet" href="style.css">
@@ -36,6 +38,86 @@
 
     <!-- header section end -->
 
+    <!-- home section starts -->
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3>app landing page</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla totam veritatis quos nostrum, iste omnis.
+            </p>
+            <a href="" class="btn">get started</a>
+        </div>
+
+        <div class="swiper-container image-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/shot-01.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/shot-02.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/shot-03.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/shot-04.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/shot-05.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- features section starts -->
+    <div class="features" id="features">
+        <h1 class="heading">app features</h1>
+
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-magic"></i>
+                <h3>smooth design</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim error, consequatur ipsam cum qui
+                    rerum.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-shield-alt"></i>
+                <h3>privacy protect</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim error, consequatur ipsam cum qui
+                    rerum.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-globe"></i>
+                <h3>multiple languages</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim error, consequatur ipsam cum qui
+                    rerum.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>local tracking</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim error, consequatur ipsam cum qui
+                    rerum.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-cogs"></i>
+                <h3>powerfull setting</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim error, consequatur ipsam cum qui
+                    rerum.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-headset"></i>
+                <h3>24 x 7 Service</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim error, consequatur ipsam cum qui
+                    rerum.</p>
+            </div>
+        </div>
+    </div>
+    <!-- features section ends -->
+
+
 
 
 
@@ -43,7 +125,30 @@
 
 
     <!-- scripts -->
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
     <script>
+
+        var swiper = new Swiper(".image-slider", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 100,
+                modifier: 2,
+                slideShadows: true,
+            },
+            loop: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            }
+        });
+
         let menu = document.querySelector('#menu-bar');
         let navbar = document.querySelector('.navbar');
 
