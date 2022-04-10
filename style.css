@@ -182,6 +182,93 @@ header .navbar a:hover {
     color: #fff;
 }
 
+.about .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about .row .image {
+    flex: 1 1 40rem;
+}
+
+.about .row .image img {
+    width: 100%;
+}
+
+.about .row .content {
+    flex: 1 1 40rem;
+}
+
+.about .row .content h3 {
+    color: var(--black);
+    font-size: 3.5rem;
+}
+
+.about .row .content .p {
+    color: #666;
+    font-size: 1.7rem;
+    padding: 1rem 0;
+}
+
+.about .row .content .buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about .row .content .buttons a:hover {
+    opacity: .7;
+}
+
+.about .row .content .buttons a:last-child {
+    margin-left: 2rem;
+}
+
+.usage .row {
+    display: flex;
+    align-items: center;
+}
+
+.usage .row .divider {
+    padding: 0 1rem;
+}
+
+.usage .row .box-container .box {
+    padding: 1rem 0;
+}
+
+
+.usage .row .box-container .box i {
+    color: var(--red);
+    padding: 1rem 0;
+    font-size: 4.5rem;
+}
+
+.usage .row .box-container .box h3 {
+    color: var(--black);
+    font-size: 2.5rem;
+}
+
+.usage .row .box-container .box p {
+    color: #666;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+}
+
+.usage .row .box-container:first-child {
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -209,6 +296,18 @@ header .navbar a:hover {
 
     section {
         padding: 3rem 4%;
+    }
+
+    .usage .row {
+        flex-flow: column;
+    }
+
+    .usage .row .divider {
+        display: none;
+    }
+
+    .usage .row .box-container .box {
+        text-align: center;
     }
 }
 
@@ -256,6 +355,18 @@ header .navbar a:hover {
     .home .content p {
         font-size: 1.5rem;
     }
+
+    .about .row .content {
+        text-align: center;
+    }
+
+    .about .row .content .buttons a {
+        width: 100%;
+    }
+
+    .about .row .content .buttons a:last-child {
+        margin: 1rem 0;
+    }
 }
 
 @media(max-width: 400px) {
@@ -266,4 +377,6 @@ header .navbar a:hover {
     .heading {
         font-size: 4rem;
     }
+
+
 }
